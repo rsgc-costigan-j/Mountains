@@ -19,44 +19,10 @@ let canvas = Canvas(width: 300, height: 300)
 // Draw some lines
 
 //dots
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 300, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 275, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 250, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 225, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 200, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 175, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 150, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 125, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 100, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 75, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 50, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 25, width: 2, height: 2)
-}
-for x in stride(from: 0, through: 300, by: 25){
-    canvas.drawEllipse(centreX: x, centreY: 0, width: 2, height: 2)
+for y in stride(from: 300, through: 0, by: -25){
+    for x in stride(from: 0, through: 300, by: 25){
+        canvas.drawEllipse(centreX: x, centreY: y, width: 2, height: 2)
+    }
 }
 // Draw the dark shape
 

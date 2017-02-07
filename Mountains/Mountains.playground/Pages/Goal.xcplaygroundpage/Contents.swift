@@ -17,10 +17,7 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Draw some lines
-canvas.defaultLineWidth = 1
-canvas.drawLine(fromX: 100, fromY: 0, toX: 100, toY: 50)
-canvas.drawLine(fromX: 150, fromY: 0, toX: 150, toY: 100)
-canvas.drawLine(fromX: 200, fromY: 0, toX: 200, toY: 50)
+
 //dots
 for x in stride(from: 0, through: 300, by: 25){
     canvas.drawEllipse(centreX: x, centreY: 300, width: 2, height: 2)
@@ -61,6 +58,7 @@ for x in stride(from: 0, through: 300, by: 25){
 for x in stride(from: 0, through: 300, by: 25){
     canvas.drawEllipse(centreX: x, centreY: 0, width: 2, height: 2)
 }
+// Draw the dark shape
 
 //: ## Template code
 //: The code below is necessary to see the result of your work in the Assistant Editor at right. Please do not remove.
